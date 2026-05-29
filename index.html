@@ -154,10 +154,10 @@
   <main class="max-w-6xl mx-auto px-5 py-14">
 
     <!-- HERO -->
-    <section id="about" class="grid lg:grid-cols-[280px_1fr] gap-14 items-start">
+    <section id="about" class="grid lg:grid-cols-[260px_1fr] gap-16 items-start">
 
       <!-- LEFT -->
-      <aside class="flex flex-col items-center lg:items-start">
+      <aside class="flex flex-col items-center">
 
         <!-- Avatar -->
         <div class="w-52 h-52 rounded-full overflow-hidden ring-4 ring-slate-100 dark:ring-slate-800 shadow-lg">
@@ -169,8 +169,9 @@
         </div>
 
         <!-- Name -->
-        <div class="mt-7 text-center lg:text-left">
-          <h1 class="text-4xl font-bold tracking-tight">
+        <div class="mt-6 text-center">
+
+          <h1 class="text-3xl font-bold tracking-tight leading-tight">
             Gia Thinh Pham
           </h1>
 
@@ -178,13 +179,14 @@
             Master Student
           </p>
 
-          <p class="mt-1 text-base text-slate-500 dark:text-slate-500">
-            KAIST · Multimodal AI Research
+          <p class="mt-1 text-sm text-slate-500 dark:text-slate-500">
+            KAIST · MMAI Lab
           </p>
+
         </div>
 
         <!-- Tags -->
-        <div class="flex flex-wrap gap-2 mt-6 justify-center lg:justify-start">
+        <div class="flex flex-wrap gap-2 mt-4 justify-center">
 
           <span class="badge bg-blue-50 text-blue-600 dark:bg-blue-900/30 dark:text-blue-300">
             Multimodal Learning
@@ -201,14 +203,14 @@
         </div>
 
         <!-- Links -->
-        <div class="flex gap-4 mt-8">
+        <div class="flex gap-3 mt-4">
 
           <!-- Email -->
           <a
             href="mailto:thinhcm2003@gmail.com"
             class="group flex flex-col items-center"
           >
-            <div class="w-12 h-12 rounded-xl bg-slate-100 dark:bg-slate-800 flex items-center justify-center group-hover:text-blue-500 transition">
+            <div class="w-10 h-10 rounded-xl bg-slate-100 dark:bg-slate-800 flex items-center justify-center group-hover:text-blue-500 transition">
               <i class="fas fa-envelope text-lg"></i>
             </div>
 
@@ -223,7 +225,7 @@
             target="_blank"
             class="group flex flex-col items-center"
           >
-            <div class="w-12 h-12 rounded-xl bg-slate-100 dark:bg-slate-800 flex items-center justify-center group-hover:text-blue-500 transition">
+            <div class="w-10 h-10 rounded-xl bg-slate-100 dark:bg-slate-800 flex items-center justify-center group-hover:text-blue-500 transition">
               <i class="fas fa-graduation-cap text-lg"></i>
             </div>
 
@@ -237,9 +239,9 @@
       </aside>
 
       <!-- RIGHT -->
-      <div class="space-y-5">
-
-        <div class="space-y-4 text-slate-700 dark:text-slate-300 leading-relaxed max-w-3xl text-[17px]">
+      <div class="space-y-6">
+        <!-- Content -->
+        <div class="space-y-5 text-slate-700 dark:text-slate-300 leading-relaxed max-w-3xl text-[17px]">
 
           <p>
             I graduated from the Advanced Program in Computer Science at the
@@ -282,6 +284,38 @@
 
         </div>
 
+        <!-- News Section -->
+        <div class="pt-8">
+
+          <div class="flex items-center justify-between mb-5">
+
+            <h3 class="text-xl font-semibold tracking-tight">
+              News
+            </h3>
+          </div>
+
+          <!-- News Item -->
+          <div class="flex gap-4">
+
+            <div class="w-24 text-sm text-slate-400 pt-0.5">
+              May 2026
+            </div>
+
+            <div class="flex-1 text-sm leading-relaxed text-slate-700 dark:text-slate-300">
+              Will join the MS program in Electrical Engineering at KAIST under the supervision of
+              <a
+                href="https://mmai.io/joon/"
+                target="_blank"
+                class="text-blue-500 hover:underline"
+              >
+                Prof. Joon Son Chung
+              </a>.
+            </div>
+
+          </div>
+
+        </div>
+        
       </div>
 
     </section>
@@ -295,8 +329,7 @@
         </h2>
 
         <a
-          href="https://scholar.google.com/citations?user=LnheL6kAAAAJ&hl=en"
-          target="_blank"
+          href="publications.html"
           class="text-sm text-blue-500 hover:underline"
         >
           View all →
@@ -308,7 +341,7 @@
         <div class="flex flex-col sm:flex-row gap-5">
 
           <img
-            src="images/publication1.png"
+            src="images/distillcaps.png"
             class="w-full sm:w-52 rounded-xl border border-slate-200 dark:border-slate-700"
           />
 
@@ -316,20 +349,67 @@
 
             <div class="flex flex-wrap gap-2 mb-3">
               <span class="badge bg-blue-50 text-blue-600 dark:bg-blue-900/30 dark:text-blue-300">
-                PACLIC 2024
+                CIKM'25
               </span>
             </div>
 
             <h3 class="font-semibold text-lg leading-snug">
-              Gender and Dialect Classification for the Vietnamese Language
+              <a
+                href="https://dl.acm.org/doi/pdf/10.1145/3746252.3761269"
+                target="_blank"
+                class="hover:text-blue-500 transition"
+              >
+              DistillCaps: Enhancing Audio-Language Alignment in Captioning via Retrieval-Augmented Knowledge Distillation
             </h3>
 
             <p class="mt-2 text-sm text-slate-500 dark:text-slate-400">
-              Gia Thinh Pham, et al.
+              <strong>Thinh Pham</strong>*, Nghiem Diep*, Lizi Liao, Binh T Nguyen
             </p>
 
             <p class="mt-3 text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
-              A study on Vietnamese speech analysis focusing on gender and dialect classification.
+              A retrieval-augmented knowledge distillation framework for audio captioning that transfers retrieval-enhanced 
+              audio-language alignment into a lightweight retrieval-free inference model.
+            </p>
+
+          </div>
+
+        </div>
+
+      </article>
+
+      <article class="publication-card mt-6 transition duration-300 rounded-2xl border border-slate-200 dark:border-slate-800 p-5 bg-slate-50/50 dark:bg-slate-900/40">
+
+        <div class="flex flex-col sm:flex-row gap-5">
+
+          <img
+            src="images/MELCOT.png"
+            class="w-full sm:w-52 rounded-xl border border-slate-200 dark:border-slate-700"
+          />
+
+          <div class="flex-1">
+
+            <div class="flex flex-wrap gap-2 mb-3">
+              <span class="badge bg-blue-50 text-blue-600 dark:bg-blue-900/30 dark:text-blue-300">
+                WSDM'26
+              </span>
+            </div>
+
+            <h3 class="font-semibold text-lg leading-snug">
+              <a
+                href="https://dl.acm.org/doi/pdf/10.1145/3773966.3779389"
+                target="_blank"
+                class="hover:text-blue-500 transition"
+              >
+              MELCOT: A Hybrid Learning Architecture with Marginal Preservation for Matrix-Valued Regression
+            </h3>
+
+            <p class="mt-2 text-sm text-slate-500 dark:text-slate-400">
+              Khang Tran, Hieu Cao, <strong>Thinh Pham</strong>, Nghiem Diep, Tri Cao, Binh Nguyen
+            </p>
+
+            <p class="mt-3 text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+              A hybrid regression model that preserves matrix spatial structure while 
+              learning complex global patterns through optimal transport and marginal estimation.
             </p>
 
           </div>
@@ -349,6 +429,7 @@
 
       <div class="space-y-10">
 
+        <!-- CoAgent -->
         <div class="grid md:grid-cols-[180px_1fr] gap-4">
 
           <div class="text-sm text-slate-500">
@@ -360,10 +441,74 @@
               Research Assistant · CoAgent Lab, Singapore Management University
             </h3>
 
-            <p class="mt-3 text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
-              Worked on Emotional Support Conversation and Personality Detection,
-              including methodology design, experiments, and analysis.
+            <p class="mt-1 text-sm text-slate-500 dark:text-slate-400">
+              Supervisor:
+              <a
+                href="https://scholar.google.com/citations?user=W2b08EUAAAAJ&hl=vi&oi=ao"
+                target="_blank"
+                class="text-blue-500 hover:underline"
+              >
+                Prof. Lizi Liao
+              </a>
             </p>
+
+            <p class="mt-3 text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+              Worked on Emotional Support Conversation and Personality Detection.
+              Handled literature review, methodology design,
+              implementation, and result analysis.
+            </p>
+          </div>
+
+        </div>
+
+        <!-- VinBigData -->
+        <div class="grid md:grid-cols-[180px_1fr] gap-4">
+
+          <div class="text-sm text-slate-500">
+            Jul 2024 – Dec 2024
+          </div>
+
+          <div>
+            <h3 class="font-semibold">
+              Application Driven Mathematics · VinBigData
+            </h3>
+
+            <p class="mt-3 text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+              Conducted research on Audio-Text Retrieval and Audio Captioning,
+              including multimodal alignment techniques and dataset processing.
+            </p>
+          </div>
+
+        </div>
+
+        <!-- AISIA -->
+        <div class="grid md:grid-cols-[180px_1fr] gap-4">
+
+          <div class="text-sm text-slate-500">
+            Oct 2023 – Present
+          </div>
+
+          <div>
+            <h3 class="font-semibold">
+              Research Member · AISIA Lab
+            </h3>
+
+            <p class="mt-1 text-sm text-slate-500 dark:text-slate-400">
+              Supervisor:
+              <a
+                href="https://scholar.google.com/citations?user=dXEb3PMAAAAJ&hl=en"
+                target="_blank"
+                class="text-blue-500 hover:underline"
+              >
+                Prof. Thanh Binh Nguyen
+              </a>
+            </p>
+
+            <p class="mt-3 text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+              Researching Multimodal Large Language Models, Audio Captioning,
+              and Vietnamese Speech-to-Text systems.
+            </p>
+
           </div>
 
         </div>
@@ -371,6 +516,7 @@
       </div>
 
     </section>
+
 
     <!-- EDUCATION -->
     <section id="education" class="mt-24 reveal">
@@ -392,7 +538,7 @@
             </h3>
 
             <p class="text-slate-600 dark:text-slate-400 mt-1">
-              KAIST, Daejeon
+              Korea Advanced Institute of Science and Technology (KAIST), Daejeon
             </p>
           </div>
         </div>
@@ -408,7 +554,7 @@
             </h3>
 
             <p class="text-slate-600 dark:text-slate-400 mt-1">
-              University of Science — VNUHCM
+              University of Science, Vietnam National University Ho Chi Minh City (VNUHCM)
             </p>
           </div>
         </div>
@@ -417,6 +563,7 @@
 
     </section>
 
+    
     <!-- AWARDS -->
     <section id="awards" class="mt-24 reveal">
 
@@ -427,8 +574,18 @@
       <div class="space-y-4 text-sm">
 
         <div class="flex gap-5">
+          <span class="text-slate-500 w-12">2026</span>
+          <span>KAIST Scholarship</span>
+        </div>
+
+        <div class="flex gap-5">
           <span class="text-slate-500 w-12">2025</span>
           <span>Third Prize — Eureka for Student Research</span>
+        </div>
+
+        <div class="flex gap-5">
+          <span class="text-slate-500 w-12">2024</span>
+          <span>Gameloft Scholarship</span>
         </div>
 
         <div class="flex gap-5">
@@ -437,13 +594,29 @@
         </div>
 
         <div class="flex gap-5">
+          <span class="text-slate-500 w-12">2023</span>
+          <span>Mitsubishi UFJ Scholarship</span>
+        </div>
+
+        <div class="flex gap-5">
           <span class="text-slate-500 w-12">2022</span>
           <span>Second Prize — ICPC Vietnam National Programming Contest</span>
+        </div>
+
+        <div class="flex gap-5">
+          <span class="text-slate-500 w-12">2022</span>
+          <span>Third Prize — UCPC-UIT Collegiate Programming Contest</span>
+        </div>
+
+        <div class="flex gap-5">
+          <span class="text-slate-500 w-12">2021</span>
+          <span>Second Prize — Informatics Competition for Provincial Excellent Students</span>
         </div>
 
       </div>
 
     </section>
+
 
   </main>
 
